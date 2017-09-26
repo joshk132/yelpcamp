@@ -14,7 +14,7 @@ var express     = require("express"),
 //requiring routes
 var commentRoutes    = require("./routes/comments"),
     campgroundRoutes = require("./routes/campgrounds"),
-    indexRoutes      = require("./routes/index")
+    indexRoutes      = require("./routes/index");
     
 mongoose.connect("mongodb://josh:josh@ds029705.mlab.com:29705/yelpcamp");
 // mongoose.connect("mongodb://localhost/yelp_camp_v10");
