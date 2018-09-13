@@ -44,11 +44,11 @@ app.use(function(req, res, next){
    next();
 });
 
-app.use("/", indexRoutes);
-app.use("/campgrounds", campgroundRoutes);
-app.use("/campgrounds/:id/comments", commentRoutes);
+app.use("/yelpcamp/", indexRoutes);
+app.use("/yelpcamp/campgrounds", campgroundRoutes);
+app.use("/yelpcamp/campgrounds/:id/comments", commentRoutes);
 
 
-app.listen(80, () => {
+app.listen(8080, () => {
    console.log("The YelpCamp Server Has Started!");
 });
